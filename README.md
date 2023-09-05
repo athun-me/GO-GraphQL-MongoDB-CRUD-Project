@@ -19,6 +19,25 @@ This project is a comprehensive example of building a GraphQL API in GoLang for 
 8. After you've built the project, these are the queries to interact with the API - 
 
 
+# Running the application
+
+1. Install the dependencies
+
+```bash
+go mod tidy
+```
+
+2. Run the application
+
+```bash
+go run server.go  
+```
+3. Copy and paste into the browser.
+
+```bash
+    http://localhost:8080/
+```
+
 ## Get All Jobs
 
 ```bash
