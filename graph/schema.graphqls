@@ -2,6 +2,13 @@
 #
 # https://gqlgen.com/getting-started/
 
+
+type Mutation {
+  createJobListing(input: CreateJobListingInput!): JobListing!
+  updateJobListing(id: ID!, input: UpdateJobListingInput!): JobListing!
+  deleteJobListing(id: ID!): DeleteJobResponse!
+}
+
 type JobListing {
   _id: ID!
   title: String!
@@ -15,11 +22,6 @@ type Query {
   job(id: ID!): JobListing!
 }
 
-type Mutation {
-  createJobListing(input: CreateJobListingInput!): JobListing!
-  updateJobListing(id: ID!, input: UpdateJobListingInput!): JobListing!
-  deleteJobListing(id: ID!): DeleteJobResponse!
-}
 
 input CreateJobListingInput {
   title: String!
